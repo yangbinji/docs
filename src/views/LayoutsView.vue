@@ -21,22 +21,10 @@
             'v-app': {
               params: [
                 [
-                  'toolbar',
-                  'Boolean',
-                  'False',
-                  'Variations: top, bottom, top-fixed, bottom-fixed'
-                ],
-                [
                   'sidebar',
                   'Boolean',
                   'False',
                   'Variations: left, right, left-fixed, right-fixed',
-                ],
-                [
-                  'footer',
-                  'Boolean',
-                  'False',
-                  '',
                 ],
                 [
                   'id',
@@ -49,6 +37,12 @@
                   'Boolean',
                   'False',
                   'Positions a fixed sidebar under the toolbar'
+                ],
+                [
+                  'scroll-y',
+                  'Class',
+                  'null',
+                  'Add vertical scrollbar to "v-content" or any other div container making the content scrollable.'
                 ]
               ]
             }
