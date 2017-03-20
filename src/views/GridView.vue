@@ -1,6 +1,7 @@
 <template lang="pug">
   doc-view(v-bind:doc="doc" id="grid-view")
     component-example(header="Grid" file="grid/1")
+    component-example(header="Offset" file="grid/2")
 </template>
 
 <script>
