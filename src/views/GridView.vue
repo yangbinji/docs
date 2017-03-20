@@ -2,6 +2,7 @@
   doc-view(v-bind:doc="doc" id="grid-view")
     component-example(header="Grid" file="grid/1")
     component-example(header="Offset" file="grid/2")
+    component-example(header="Order" file="grid/3")
 </template>
 
 <script>
@@ -29,7 +30,17 @@
                   'Boolean',
                   'False',
                   'xs:extra small, sm:small, md:medium, lg:large, xl:extra large - 1 through 12'
-                ]
+                ], [
+                  'static attrs',
+                  'Boolean',
+                  'False',
+                  'offset-xs:extra small, offset-sm:small, offset-md:medium, offset-lg:large, offset-xl:extra large - 1 through 12'
+              ],[
+                      'static attrs',
+                      'Boolean',
+                      'False',
+                      'order-xs:extra small, order-sm:small, order-md:medium, order-lg:large, order-xl:extra large - 1 through 12'
+                  ]
               ]
             }
           },
@@ -75,7 +86,7 @@
         text-align: center
         padding: 1rem 0
         margin: .5rem 0
-        
+
         &__text
           padding: 0
 </style>
