@@ -3,12 +3,14 @@
     component-example(header="Grid" file="grid/1")
     component-example(header="Offset" file="grid/2")
     component-example(header="Order" file="grid/3")
+    component-example(header="Direction and Align" file="grid/4")
 </template>
 
 <script>
   export default {
     data () {
       return {
+        direction:'row',
         doc: {
           title: 'Grid',
           desc: 'The Vuetify.js uses a 12 point grid system. The grid is used to layout an applications content and contains 5 types (xs, sm, md, lg, xl) of media breakpoints.',
@@ -23,6 +25,22 @@
                 ]
               ]
             },
+              'v-layout': {
+                  params: [
+                      [
+                          'row',
+                          'Boolean',
+                          'False',
+                          'Applies the .row class align elements horizontal'
+                      ],
+                      [
+                          'row--reverse',
+                          'Boolean',
+                          'False',
+                          'Applies the .row class align and reverse the order'
+                      ]
+                  ]
+              },
             'v-col': {
               params: [
                 [
