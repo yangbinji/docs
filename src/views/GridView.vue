@@ -4,6 +4,8 @@
     component-example(header="Offset" file="grid/2")
     component-example(header="Order" file="grid/3")
     component-example(header="Direction and Align" file="grid/4")
+    component-example(header="Row and column based on breakpoint" file="grid/5")
+    component-example(header="Equal heights and scroll-y" file="grid/6")
 </template>
 
 <script>
@@ -28,36 +30,84 @@
               'v-layout': {
                   params: [
                       [
-                          'row',
+                          'row[-size]',
                           'Boolean',
                           'False',
-                          'Applies the .row class align elements horizontal'
+                          'Applies the .row class align elements horizontal. Available for all breakpoints xs => xl. Example: row-sm'
                       ],
                       [
                           'row--reverse',
                           'Boolean',
                           'False',
                           'Applies the .row class align and reverse the order'
-                      ]
+                      ],
+                      [
+                          'column[-size]',
+                          'Boolean',
+                          'False',
+                          'Applies the .column class align elements vertical. Available for all breakpoints xs => xl. Example: column-xs'
+                      ],
+                      [
+                          'child-flex[-size]',
+                          'Boolean',
+                          'False',
+                          'Applies the .flex class (flex:1) to the first child of layout. Available for all breakpoints xs => xl. Example: child-flex-xs. Hint: You can use class="flex" on specific child element.'
+                      ],
+                      [
+                          'flex[-size]',
+                          'Class',
+                          'False',
+                          'Applies the .flex class (flex:1). Available for all breakpoints xs => xl. Example: class="flex-sm"'
+                      ],
+                      [
+                          'align-space-around',
+                          'Boolean',
+                          'False',
+                          'Space around for child elements.'
+                      ],
+                      [
+                          'align-space-between',
+                          'Boolean',
+                          'False',
+                          'Space between child elements.'
+                      ],
+                      [
+                          'align-center',
+                          'Boolean',
+                          'False',
+                          'Center all child elements horizontal and vertical.'
+                      ],
+                      [
+                          'align-vert-[start|end]',
+                          'Boolean',
+                          'False',
+                          'Vertical alignment to start or end.'
+                      ],
+                      [
+                          'align-horiz-[start|end]',
+                          'Boolean',
+                          'False',
+                          'Horizontal alignment to start or end.'
+                      ],
                   ]
               },
             'v-col': {
               params: [
                 [
-                  'static attrs',
+                  'xs(1-12)',
                   'Boolean',
                   'False',
                   'xs:extra small, sm:small, md:medium, lg:large, xl:extra large - 1 through 12'
                 ], [
-                  'static attrs',
+                  'offset-[size](1-12)',
                   'Boolean',
                   'False',
-                  'offset-xs:extra small, offset-sm:small, offset-md:medium, offset-lg:large, offset-xl:extra large - 1 through 12'
+                  'offset-xs:extra small, offset-sm:small, offset-md:medium, offset-lg:large, offset-xl:extra large. Example: offset-xs3'
               ],[
-                      'static attrs',
+                      'order-[size](1-12)',
                       'Boolean',
                       'False',
-                      'order-xs:extra small, order-sm:small, order-md:medium, order-lg:large, order-xl:extra large - 1 through 12'
+                      'order-xs:extra small, order-sm:small, order-md:medium, order-lg:large, order-xl:extra large. Example: order-xs1'
                   ]
               ]
             }
