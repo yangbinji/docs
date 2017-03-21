@@ -81,14 +81,20 @@
                           'align-vert-[start|end]',
                           'Boolean',
                           'False',
-                          'Vertical alignment to start or end.'
+                          'Vertical alignment to start or end.Example: align-vert-start'
                       ],
                       [
                           'align-horiz-[start|end]',
                           'Boolean',
                           'False',
-                          'Horizontal alignment to start or end.'
+                          'Horizontal alignment to start or end. Example: align-horiz-start'
                       ],
+                      [
+                          'wrap',
+                          'Boolean',
+                          'False',
+                          'Allows children to wrap within the container if the elements use more than 100%.'
+                      ]
                   ]
               },
             'v-col': {
