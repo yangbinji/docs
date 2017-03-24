@@ -122,7 +122,6 @@
             'grid': {
               params: [
                 ['<v-content>', 'The main content wrapper for your application'],
-                ['<v-row>', 'The .row class'],
                 ['<v-spacer>', 'Spacer for flexbox grids']
               ]
             }
