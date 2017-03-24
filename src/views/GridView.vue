@@ -1,11 +1,11 @@
 <template lang="pug">
   doc-view(v-bind:doc="doc" id="grid-view")
-    component-example(header="Grid" file="grid/1")
+    component-example(header="Grid with option wrap" file="grid/1")
     component-example(header="Offset" file="grid/2")
     component-example(header="Order" file="grid/3")
     component-example(header="Direction and Align" file="grid/4")
     component-example(header="Row and column based on breakpoint" file="grid/5")
-    component-example(header="Equal heights and scroll-y" file="grid/6")
+    component-example(header="Equal heights and scrollable content" file="grid/6")
 </template>
 
 <script>
