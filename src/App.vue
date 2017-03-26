@@ -1,9 +1,7 @@
 <template lang="pug">
   v-app(left-fixed-sidebar)
-
     main-nav(v-bind:title="title" v-on:sidebar="sidebar = !sidebar")
-
-    main()
+    main
       main-side(v-model="sidebar")
 
       v-content
