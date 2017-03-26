@@ -54,8 +54,4 @@
 
         h1
           font-size: 4vw
-<<<<<<< HEAD
-
-=======
->>>>>>> dev
 </style>

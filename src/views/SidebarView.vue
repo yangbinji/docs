@@ -175,7 +175,7 @@
       justify-content: center
 
     .toolbar
-      min-height: 5rem
+      min-height: 64px
 
       &__side-icon
         margin: 0 2rem
