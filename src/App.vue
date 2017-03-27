@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-app(left-fixed-sidebar)
+  v-app(left-sidebar sidebar-breakpoint="lg" sidebar-under-toolbar toolbar-inset)
     main-nav(v-bind:title="title" v-on:sidebar="sidebar = !sidebar")
     main
       main-side(v-model="sidebar")
