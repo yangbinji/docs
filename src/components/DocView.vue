@@ -4,6 +4,7 @@
       section-def
         dt(slot="title" v-html="doc.title")
         dd(slot="desc" v-html="doc.desc")
+    slot(name="documentation" class='documentation-section')
     section
       section-header Examples
       slot
