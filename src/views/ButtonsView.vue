@@ -418,6 +418,18 @@
                 ]
               ]
             }
+          },
+          events: {
+            'v-btn-dropdown': {
+              events: [
+                ['input']
+              ]
+            },
+            'v-btn-toggle': {
+              events: [
+                ['input']
+              ]
+            },
           }
         }
       }

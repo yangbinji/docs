@@ -100,6 +100,21 @@
                 ]
               ]
             }
+          },
+          events: {
+            'v-data-table': {
+              events: [
+                ['input'],
+              ]
+            },
+            'v-edit-dialog': {
+              events: [
+                ['oepn'],
+                ['close'],
+                ['cancel'],
+                ['save'],
+              ]
+            },
           }
         },
         headers: [

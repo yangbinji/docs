@@ -146,6 +146,16 @@
                 description: 'Current input value'
               }
             }
+          },
+          events: {
+            'v-text-field': {
+              events: [
+                ['input'],
+                ['focus'],
+                ['blur'],
+                ['change'],
+              ]
+            },
           }
         },
         e91: 'Preliminary report describing the',
