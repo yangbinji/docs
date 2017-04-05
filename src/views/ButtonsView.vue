@@ -422,12 +422,12 @@
           events: {
             'v-btn-dropdown': {
               events: [
-                ['input']
+                ['input', 'String, Number', 'Selected value']
               ]
             },
             'v-btn-toggle': {
               events: [
-                ['input']
+                ['input', 'String, Number', 'Selected button(s)']
               ]
             },
           }

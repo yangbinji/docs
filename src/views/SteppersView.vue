@@ -116,7 +116,7 @@
           events: {
             'v-stepper': {
               events: [
-                ['input'],
+                ['input', "Number, String", 'Current step'],
               ]
             },
           }

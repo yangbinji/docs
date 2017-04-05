@@ -190,7 +190,7 @@
           events: {
             'v-select': {
               events: [
-                ['input'],
+                ['input', 'String', 'Selected value'],
               ]
             },
           }

@@ -243,7 +243,7 @@
           events: {
             'v-radio': {
               events: [
-                ['change']
+                ['change', 'String, Number', 'Input value changed.']
               ]
             },
           }

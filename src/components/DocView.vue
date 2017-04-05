@@ -40,7 +40,7 @@
         propHeaders: ['Option', 'Type(s)', 'Default', 'Description'],
         slotHeaders: ['Name', 'Description'],
         functionalHeaders: ['Name', 'Class'],
-        eventHeaders: ['Name'],
+        eventHeaders: ['Name', 'Type(s)', 'Description'],
       }
     },
 

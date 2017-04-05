@@ -57,7 +57,7 @@
           events: {
             'v-alert': {
               events: [
-                ['input']
+                ['input', 'Boolean: False', "Alert was closed. Requires 'dismissible' prop."]
               ]
             }
           }

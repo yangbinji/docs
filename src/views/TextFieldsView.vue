@@ -150,10 +150,10 @@
           events: {
             'v-text-field': {
               events: [
-                ['input'],
-                ['focus'],
-                ['blur'],
-                ['change'],
+                ['input', 'String', 'Current input value. Fires while typing.'],
+                ['focus', 'Boolean', 'Focus state changed.'],
+                ['blur', '-', 'Input lost focus.'],
+                ['change', 'String', 'Input value was changed. Fired on blur.'],
               ]
             },
           }

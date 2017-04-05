@@ -158,7 +158,7 @@
           events: {
             'v-tabs': {
               events: [
-                ['input'],
+                ['input', 'Object', 'Current active tab'],
               ]
             },
           }

@@ -122,7 +122,7 @@
           events: {
             'v-slider': {
               events: [
-                ['input'],
+                ['input','Number, String', 'Selected value'],
               ]
             },
           }

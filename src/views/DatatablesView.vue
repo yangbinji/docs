@@ -104,15 +104,15 @@
           events: {
             'v-data-table': {
               events: [
-                ['input'],
+                ['input', 'Array', 'Array will contain selected rows'],
               ]
             },
             'v-edit-dialog': {
               events: [
-                ['oepn'],
-                ['close'],
-                ['cancel'],
-                ['save'],
+                ['open', '-', 'Edit dialog opened'],
+                ['close', '-', 'Edit dialog closed'],
+                ['cancel', '-', 'Cancel button was clicked'],
+                ['save', '-', 'Save button was clicked'],
               ]
             },
           }

@@ -50,7 +50,7 @@
           events: {
             'v-pagination': {
               events: [
-                ['input'],
+                ['input', 'Number', 'Current page'],
               ]
             },
           }
