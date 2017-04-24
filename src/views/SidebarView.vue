@@ -81,6 +81,18 @@
                   'Sets height of the sidebar',
                 ],
                 [
+                  'light',
+                  'Boolean',
+                  'False',
+                  'Changes the sidebar theme to light (default dark)',
+                ],
+                [
+                  'mini',
+                  'Boolean',
+                  'False',
+                  'Condenses sidebar width',
+                ],
+                [
                   'mobile',
                   'Boolean',
                   'True',
