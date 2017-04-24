@@ -1,18 +1,18 @@
 <template lang="pug">
   doc-view(v-bind:doc="doc" id="sidebars-view")
     component-example(header="Left" file="sidebar/1" v-bind:data="$data")
-      section-text(slot="details") If you want to programmatically open or close the sidebar, you can do so by using <code>v-model</code> with a boolean value. Keep in mind, if the trigger for the opening is not contained within the <code>activator</code> slot and is done so by a click, you must <strong>stopPropagation</strong> to avoid immediately triggering a close event.
+    //-   section-text(slot="details") If you want to programmatically open or close the sidebar, you can do so by using <code>v-model</code> with a boolean value. Keep in mind, if the trigger for the opening is not contained within the <code>activator</code> slot and is done so by a click, you must <strong>stopPropagation</strong> to avoid immediately triggering a close event.
 
-    blockquote A sidebar is required to have an activator. This allows the sidebar to be opened on mobile.
+    //- blockquote A sidebar is required to have an activator. This allows the sidebar to be opened on mobile.
 
-    component-example(header="Drawer" file="sidebar/2" v-bind:data="$data")
+    //- component-example(header="Drawer" file="sidebar/2" v-bind:data="$data")
 
-    component-example(header="Item Groups" file="sidebar/3" v-bind:data="$data")
-      section-text(slot="details") For more details on the available item options, check out the <a href="javascript:;" v-on:click.stop="$router.push('/components/lists')">lists</a> section.
+    //- component-example(header="Item Groups" file="sidebar/3" v-bind:data="$data")
+    //-   section-text(slot="details") For more details on the available item options, check out the <a href="javascript:;" v-on:click.stop="$router.push('/components/lists')">lists</a> section.
 
-    blockquote Sidebars groups require an additional property in the item array to designate the base path for their sub routes. This is used for highlighting with vue-router.
+    //- blockquote Sidebars groups require an additional property in the item array to designate the base path for their sub routes. This is used for highlighting with vue-router.
 
-    component-example(header="Ripples" file="sidebar/4" v-bind:data="$data")
+    //- component-example(header="Ripples" file="sidebar/4" v-bind:data="$data")
 
     markup(lang="js")
       |data () {
@@ -118,7 +118,8 @@
           { title: 'Profile', avatar: 'account_box' },
           { title: 'Contact', avatar: 'import_contacts' }
         ],
-        sidebar: null,
+        mini: false,
+        e1: false,
         sidebar2: null,
         sidebar3: null,
         sidebar4: null,
@@ -163,39 +164,4 @@
 </script>
 
 <style lang="stylus">
-  #sidebars-view
-    .with, main
-      min-height: 400px
-      
-    .with.sidebar-under-toolbar
-      position: relative
-      
-      .toolbar
-        z-index: 6
-
-    main
-      padding-left: 0
-      overflow: hidden
-      position: relative
-
-    .component-example__container
-      flex: 1
-      min-height: 400px
-      position: relative
-      justify-content: center
-
-    .toolbar
-      min-height: 56px
-
-      &__side-icon
-        margin: 0 2rem
-
-      &--fixed
-        position: absolute
-
-    .sidebar
-      z-index: 2
-      &--fixed
-        position: absolute
-        top: 0
 </style>
