@@ -100,7 +100,7 @@
                 ],
                 [
                   'mobile-break-point',
-                  'Number',
+                  '[Number, String]',
                   '992',
                   'The maximum width in px before sidebar auto-closes',
                 ],
