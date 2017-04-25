@@ -81,6 +81,12 @@
                   'Sets height of the sidebar',
                 ],
                 [
+                  'hide-overlay',
+                  'Boolean',
+                  'False',
+                  'Hide the display of the overlay',
+                ],
+                [
                   'light',
                   'Boolean',
                   'False',

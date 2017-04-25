@@ -51,10 +51,10 @@
                   'Lazily load dialog contents'
                 ],
                 [
-                  'overlay',
+                  'hide-overlay',
                   'Boolean',
-                  'True',
-                  'Places a dark overlay behind the Dialog'
+                  'False',
+                  'Hide the display of the overlay',
                 ],
                 [
                   'transition',
